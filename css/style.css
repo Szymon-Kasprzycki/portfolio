@@ -195,7 +195,7 @@ section.projects div.project p {
 
 section.motto {
     position: relative;
-    background-image: url(/images/motto.jpg);
+    background-image: url(../images/motto.jpg);
     background-size: cover;
     background-position: 30% center;
     color: white;
