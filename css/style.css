@@ -88,7 +88,7 @@ header div.welcome button.more-about {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 /*SEKCJA 1 - CECHY*/
@@ -138,6 +138,7 @@ section.projects {
     background-color: #1e1e1e;
     text-align: center;
     color: white;
+    padding-bottom: 20px;
 }
 
 section.projects h1 {
@@ -190,6 +191,47 @@ section.projects div.project p {
     line-height: 1.2;
 }
 
+/*MOTTO*/
+
+section.motto {
+    position: relative;
+    background-image: url(/images/motto.jpg);
+    background-size: cover;
+    background-position: 30% center;
+    color: white;
+}
+
+section.motto div.motto {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+section.motto div.motto h1 {
+    font-family: 'saira condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-top: 30px;
+}
+
+section.motto div.motto h2 {
+    font-family: 'saira condensed', sans-serif;
+    padding: 80px 15px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+section.motto div.motto p {
+    font-family: 'saira', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
 /*WIDOK WIĘKSZE TEL*/
 @media (orientation: portrait) and (min-width: 360px) {
     header img.me {
@@ -227,6 +269,21 @@ section.projects div.project p {
 
     section.projects h1 {
         font-size: 2.7rem;
+    }
+
+    section.motto div.motto h1 {
+        font-size: 3rem;
+        padding-top: 40px;
+    }
+
+    section.motto div.motto h2 {
+        padding: 80px 20px 0;
+        font-size: 2.1rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.4rem;
+        padding-top: 25px;
     }
 }
 
@@ -268,6 +325,18 @@ section.projects div.project p {
     section.projects div.project p {
         font-size: 1.4rem;
     }
+
+    section.motto div.motto h1 {
+        font-size: 3.3rem;
+    }
+
+    section.motto div.motto h2 {
+        font-size: 2.2rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
@@ -291,6 +360,18 @@ section.projects div.project p {
         font-size: 1.9rem;
         line-height: 4.8rem;
         margin-top: 55px;
+    }
+
+    section.motto div.motto h1 {
+        font-size: 3.4rem;
+    }
+
+    section.motto div.motto h2 {
+        font-size: 2.4rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.6rem;
     }
 }
 
@@ -332,6 +413,10 @@ section.projects div.project p {
         font-size: 2rem;
     }
 
+    section.projects {
+        padding-bottom: 70px;
+    }
+
     section.projects h1 {
         font-size: 5rem;
     }
@@ -347,6 +432,20 @@ section.projects div.project p {
 
     section.projects div.project p {
         font-size: 2rem;
+    }
+
+    section.motto div.motto h1 {
+        font-size: 5rem;
+        padding-top: 70px;
+    }
+
+    section.motto div.motto h2 {
+        font-size: 3.2rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 2.2rem;
+        margin-top: 40px;
     }
 }
 
@@ -381,6 +480,10 @@ section.projects div.project p {
         font-size: 3rem;
     }
 
+    section.projects {
+        padding-bottom: 100px;
+    }
+
     section.projects h1 {
         font-size: 6rem;
     }
@@ -396,6 +499,21 @@ section.projects div.project p {
 
     section.projects div.project p {
         font-size: 3rem;
+    }
+
+    section.motto div.motto h1 {
+        font-size: 7rem;
+        padding-top: 150px;
+    }
+
+    section.motto div.motto h2 {
+        font-size: 4rem;
+        padding-top: 100px;
+    }
+
+    section.motto div.motto p {
+        font-size: 3rem;
+        margin-top: 60px;
     }
 }
 
@@ -426,6 +544,19 @@ section.projects div.project p {
 
     section.features article.feature p {
         font-size: 1.5rem;
+    }
+
+    section.motto div.motto h1 {
+        padding-top: 20px;
+    }
+
+    section.motto div.motto h2 {
+        padding: 30px 20px 0;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.2rem;
+        padding-top: 8px;
     }
 }
 
@@ -461,6 +592,10 @@ section.projects div.project p {
         font-size: 3.4rem;
     }
 
+    section.projects {
+        padding-bottom: 40px;
+    }
+
     section.projects div.project {
         margin-bottom: 40px;
     }
@@ -472,6 +607,21 @@ section.projects div.project p {
     section.projects div.project p {
         font-size: 1.4rem;
     }
+
+    section.motto div.motto h1 {
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+
+    section.motto div.motto h2 {
+        padding: 30px 20px 0;
+        font-size: 2.1rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.35rem;
+        padding-top: 8px;
+    }
 }
 
 @media (orientation: landscape) and (min-width:730px) {
@@ -481,6 +631,21 @@ section.projects div.project p {
 
     section.projects div.project p {
         font-size: 1.6rem;
+    }
+
+    section.motto div.motto h1 {
+        padding-top: 30px;
+        font-size: 3.4rem;
+    }
+
+    section.motto div.motto h2 {
+        padding: 30px 20px 0;
+        font-size: 2.2rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.5rem;
+        padding-top: 8px;
     }
 }
 
@@ -512,6 +677,10 @@ section.projects div.project p {
         font-size: 1.9rem;
     }
 
+    section.projects {
+        padding-bottom: 60px;
+    }
+
     section.projects h1 {
         font-size: 3.8rem;
     }
@@ -526,6 +695,21 @@ section.projects div.project p {
 
     section.projects div.project p {
         font-size: 1.8rem;
+    }
+
+    section.motto div.motto h1 {
+        padding-top: 35px;
+        font-size: 3.7rem;
+    }
+
+    section.motto div.motto h2 {
+        padding: 30px 20px 0;
+        font-size: 2.5rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 1.78rem;
+        padding-top: 6px;
     }
 }
 
@@ -577,6 +761,10 @@ section.projects div.project p {
         font-size: 5.5rem;
     }
 
+    section.projects {
+        padding-bottom: 60px;
+    }
+
     section.projects div.project {
         margin-bottom: 60px;
     }
@@ -587,6 +775,21 @@ section.projects div.project p {
 
     section.projects div.project p {
         font-size: 1.8rem;
+    }
+
+    section.motto div.motto h1 {
+        padding-top: 60px;
+        font-size: 5rem;
+    }
+
+    section.motto div.motto h2 {
+        padding: 70px 20px 0;
+        font-size: 3.5rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 2.3rem;
+        padding-top: 35px;
     }
 }
 
@@ -661,6 +864,10 @@ section.projects div.project p {
         font-size: 5.5rem;
     }
 
+    section.projects {
+        padding-bottom: 60px;
+    }
+
     section.projects div.project {
         max-width: 1150px;
         margin: 0 auto;
@@ -690,6 +897,25 @@ section.projects div.project p {
 
     section.projects div.project p {
         font-size: 1.8rem;
+    }
+
+    section.motto {
+        height: 100vh;
+    }
+
+    section.motto div.motto h1 {
+        padding-top: 120px;
+        font-size: 6.5rem;
+    }
+
+    section.motto div.motto h2 {
+        padding: 170px 25% 0;
+        font-size: 4.8rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 2.4rem;
+        padding-top: 35px;
     }
 }
 
@@ -754,7 +980,6 @@ section.projects div.project p {
 
     section.projects div.project {
         max-width: 1250px;
-        margin-bottom: 60px;
     }
 }
 
