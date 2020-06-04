@@ -15,6 +15,12 @@ html {
     font-size: 10px;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /*HEADER*/
 
 header {
@@ -88,7 +94,7 @@ section {
 /*SEKCJA 1 - CECHY*/
 
 section.features {
-    margin: 20px 55px 20px 55px;
+    padding: 35px 10% 35px 10%;
     text-align: center;
 }
 
@@ -104,8 +110,8 @@ section.features article {
 }
 
 section.features article img {
-    width: 200px;
-    height: 120px;
+    width: 100%;
+    /*    height: 120px;*/
     margin-top: 35px;
 }
 
@@ -125,8 +131,64 @@ section.features article p {
     font-size: 1.2rem;
 }
 
+/*PROJEKTY*/
 
+section.projects {
+    width: 100%;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: white;
+}
 
+section.projects h1 {
+    font-family: 'saira condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 25px 20px;
+}
+
+section.projects div.project {
+    margin-bottom: 20px;
+}
+
+section.projects div.project:nth-child(even) {
+    background-color: #ff4f2c;
+}
+
+section.projects div.project:nth-child(odd) {
+    background-color: #0170ba;
+}
+
+section.projects div.project:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+section.projects div.project img {
+    width: 100%;
+}
+
+section.projects div.project h2 {
+    width: 90%;
+    padding: 20px 20px 8px;
+    font-family: 'saira', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+}
+
+section.projects div.project p {
+    padding: 28px 20px;
+    font-family: 'saira', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.2;
+}
 
 /*WIDOK WIĘKSZE TEL*/
 @media (orientation: portrait) and (min-width: 360px) {
@@ -150,6 +212,22 @@ section.features article p {
         font-size: 1.6rem;
         line-height: 4rem;
     }
+
+    section.features h1 {
+        font-size: 2.8rem;
+    }
+
+    section.features article.feature h2 {
+        font-size: 2.2rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.4rem;
+    }
+
+    section.projects h1 {
+        font-size: 2.7rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 375px) {
@@ -161,6 +239,34 @@ section.features article p {
         font-size: 1.6rem;
         line-height: 4rem;
         margin-top: 62px;
+    }
+
+    section.features h1 {
+        font-size: 3rem;
+    }
+
+    section.features article.feature img {
+        margin-top: 45px;
+    }
+
+    section.features article.feature h2 {
+        font-size: 2.4rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.55rem;
+    }
+
+    section.projects h1 {
+        font-size: 3rem;
+    }
+
+    section.projects div.project h2 {
+        font-size: 2rem;
+    }
+
+    section.projects div.project p {
+        font-size: 1.4rem;
     }
 }
 
@@ -208,6 +314,40 @@ section.features article p {
         line-height: 5.5rem;
         margin-top: 85px;
     }
+
+    section.features {
+        padding-top: 60px;
+    }
+
+    section.features h1 {
+        font-size: 5rem;
+        margin-top: 40px;
+    }
+
+    section.features article.feature h2 {
+        font-size: 3.5rem;
+    }
+
+    section.features article.feature p {
+        font-size: 2rem;
+    }
+
+    section.projects h1 {
+        font-size: 5rem;
+    }
+
+    section.projects div.project {
+        margin-bottom: 70px;
+    }
+
+    section.projects div.project h2 {
+        font-size: 3.5rem;
+        border-width: 3px;
+    }
+
+    section.projects div.project p {
+        font-size: 2rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 1024px) {
@@ -228,6 +368,35 @@ section.features article p {
         line-height: 7rem;
         margin-top: 105px;
     }
+
+    section.features h1 {
+        font-size: 6.8rem;
+    }
+
+    section.features article.feature h2 {
+        font-size: 4.8rem;
+    }
+
+    section.features article.feature p {
+        font-size: 3rem;
+    }
+
+    section.projects h1 {
+        font-size: 6rem;
+    }
+
+    section.projects div.project {
+        margin-bottom: 100px;
+    }
+
+    section.projects div.project h2 {
+        font-size: 4.5rem;
+        border-width: 3px;
+    }
+
+    section.projects div.project p {
+        font-size: 3rem;
+    }
 }
 
 /*WIDOK ORIENTACJA POZIOMA TELEFON*/
@@ -246,6 +415,18 @@ section.features article p {
     header div.welcome button.more-about {
         margin-top: 47px;
     }
+
+    section.features h1 {
+        font-size: 3.2rem;
+    }
+
+    section.features article.feature h2 {
+        font-size: 2.5rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
@@ -263,7 +444,46 @@ section.features article p {
         font-size: 1.6rem;
         line-height: 4rem;
     }
+
+    section.features h1 {
+        font-size: 3.5rem;
+    }
+
+    section.features article.feature h2 {
+        font-size: 2.8rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.7rem;
+    }
+
+    section.projects h1 {
+        font-size: 3.4rem;
+    }
+
+    section.projects div.project {
+        margin-bottom: 40px;
+    }
+
+    section.projects div.project h2 {
+        font-size: 2rem;
+    }
+
+    section.projects div.project p {
+        font-size: 1.4rem;
+    }
 }
+
+@media (orientation: landscape) and (min-width:730px) {
+    section.projects div.project h2 {
+        font-size: 2.4rem;
+    }
+
+    section.projects div.project p {
+        font-size: 1.6rem;
+    }
+}
+
 
 /*WIDOK ORIENTACJA POZIOMA TABLET*/
 
@@ -278,6 +498,34 @@ section.features article p {
 
     header div.welcome button.more-about {
         margin-top: 60px;
+    }
+
+    section.features h1 {
+        font-size: 4rem;
+    }
+
+    section.features article.feature h2 {
+        font-size: 3.2rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.9rem;
+    }
+
+    section.projects h1 {
+        font-size: 3.8rem;
+    }
+
+    section.projects div.project {
+        margin-bottom: 60px;
+    }
+
+    section.projects div.project h2 {
+        font-size: 3rem;
+    }
+
+    section.projects div.project p {
+        font-size: 1.8rem;
     }
 }
 
@@ -312,6 +560,34 @@ section.features article p {
         line-height: 5.5rem;
         margin-top: 150px;
     }
+
+    section.features h1 {
+        font-size: 4.8rem;
+    }
+
+    section.features article.feature h2 {
+        font-size: 4rem;
+    }
+
+    section.features article.feature p {
+        font-size: 2.6rem;
+    }
+
+    section.projects h1 {
+        font-size: 5.5rem;
+    }
+
+    section.projects div.project {
+        margin-bottom: 60px;
+    }
+
+    section.projects div.project h2 {
+        font-size: 3rem;
+    }
+
+    section.projects div.project p {
+        font-size: 1.8rem;
+    }
 }
 
 /*WIDOK ORIENTACJA POZIOMA KOMPUTER*/
@@ -345,6 +621,76 @@ section.features article p {
         background-color: rgb(255, 255, 255);
         color: #111;
     }
+
+    section.features {
+        padding: 7% 10%;
+    }
+
+    section.features h1 {
+        font-size: 5rem;
+    }
+
+    div.articles {
+        margin-top: 50px;
+    }
+
+    section.features article.feature {
+        width: 30%;
+        float: left;
+    }
+
+    section.features article.feature + article.feature {
+        margin-left: 5%
+    }
+
+    section.features article.feature h2 {
+        font-size: 2.2rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.5rem;
+    }
+
+    section.projects {
+        padding: 80px 0;
+    }
+
+    section.projects h1 {
+        margin-top: -50px;
+        margin-bottom: 50px;
+        font-size: 5.5rem;
+    }
+
+    section.projects div.project {
+        max-width: 1150px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    section.projects div.project img {
+        width: 60%;
+    }
+
+    section.projects div.project:nth-child(odd) img {
+        float: left;
+    }
+
+    section.projects div.project:nth-child(even) img {
+        float: right;
+    }
+
+    section.projects div.project div.project-desc {
+        float: left;
+        width: 40%;
+    }
+
+    section.projects div.project h2 {
+        font-size: 3rem;
+    }
+
+    section.projects div.project p {
+        font-size: 1.8rem;
+    }
 }
 
 @media (orientation: landscape) and (min-width: 1440px) {
@@ -375,6 +721,40 @@ section.features article p {
         line-height: 9rem;
         margin-top: 120px;
         transition: 0.3s;
+    }
+
+    section.features {
+        padding: 6% 5%;
+    }
+
+    section.features h1 {
+        font-size: 5.5rem;
+    }
+
+    div.articles {
+        margin-top: 80px;
+    }
+
+    section.features article.feature {
+        width: 30%;
+        float: left;
+    }
+
+    section.features article.feature + article.feature {
+        margin-left: 5%;
+    }
+
+    section.features article.feature h2 {
+        font-size: 2.5rem;
+    }
+
+    section.features article.feature p {
+        font-size: 1.7rem;
+    }
+
+    section.projects div.project {
+        max-width: 1250px;
+        margin-bottom: 60px;
     }
 }
 
@@ -407,4 +787,52 @@ section.features article p {
         margin-top: 120px;
         transition: 0.3s;
     }
-}
+
+    section.features {
+        padding: 7% 5%;
+    }
+
+    section.features h1 {
+        font-size: 6rem;
+    }
+
+    div.articles {
+        margin-top: 80px;
+    }
+
+    section.features article.feature {
+        width: 30%;
+        float: left;
+    }
+
+    section.features article.feature + article.feature {
+        margin-left: 5%
+    }
+
+    section.features article.feature h2 {
+        font-size: 3.6rem;
+    }
+
+    section.features article.feature p {
+        font-size: 2.1rem;
+    }
+
+    section.projects h1 {
+        font-size: 6rem;
+    }
+
+    section.projects div.project {
+        margin-bottom: 70px;
+    }
+
+    section.projects div.project h2 {
+        font-size: 3.6rem;
+    }
+
+    section.projects div.project p {
+        font-size: 2.1rem;
+    }
+
+    section.projects div.project {
+        max-width: 1350px;
+    }
