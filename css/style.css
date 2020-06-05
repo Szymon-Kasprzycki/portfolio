@@ -384,6 +384,10 @@ footer p {
     letter-spacing: 1px;
 }
 
+span.copyright {
+    font-family: arial, sans-serif;
+}
+
 /*WIDOK WIĘKSZE TEL*/
 @media (orientation: portrait) and (min-width: 360px) {
     header img.me {
