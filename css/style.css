@@ -195,7 +195,7 @@ section.projects div.project p {
 
 section.motto {
     position: relative;
-    background-image: url(/images/motto.jpg);
+    background-image: url(../images/motto.jpg);
     background-size: cover;
     background-position: 30% center;
     background-attachment: fixed;
@@ -249,7 +249,7 @@ section.hobby div.item {
 }
 
 section.hobby div.item:nth-of-type(1) {
-    background-image: url(/images/hobby1.jpg);
+    background-image: url(../images/hobby1.jpg);
 }
 
 section.hobby div.item:nth-of-type(2) {
