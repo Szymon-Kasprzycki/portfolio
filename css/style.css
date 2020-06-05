@@ -1559,6 +1559,11 @@ span.copyright {
         margin: 0 auto;
     }
 
+    section.contact form button.send:hover {
+        background-color: rgb(255, 255, 255);
+        color: #111;
+    }
+
     section.contact div.socials {
         width: 35%;
         float: left;
@@ -1597,7 +1602,7 @@ span.copyright {
     }
 }
 
-@media (orientation: landscape) and (width: 1366px) and (height:768px) {
+@media (orientation: landscape) and (width: 1366px) and (min-height:620px) {
     section.motto div.motto h1 {
         padding-top: 80px;
         font-size: 6.5rem;
@@ -1614,13 +1619,17 @@ span.copyright {
     }
 
     header div.welcome {
-        top: 11%;
+        top: 6%;
     }
 
     header div.welcome button.more-about {
         font-size: 3rem;
         line-height: 8rem;
-        margin-top: 100px;
+        margin-top: 80px;
+    }
+
+    section.motto div.motto h1 {
+        padding-top: 50px;
     }
 }
 
