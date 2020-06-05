@@ -195,7 +195,7 @@ section.projects div.project p {
 
 section.motto {
     position: relative;
-    background-image: url(../images/motto.jpg);
+    background-image: url(/images/motto.jpg);
     background-size: cover;
     background-position: 30% center;
     background-attachment: fixed;
@@ -249,7 +249,7 @@ section.hobby div.item {
 }
 
 section.hobby div.item:nth-of-type(1) {
-    background-image: url(../images/hobby1.jpg);
+    background-image: url(/images/hobby1.jpg);
 }
 
 section.hobby div.item:nth-of-type(2) {
@@ -298,12 +298,12 @@ section.contact h1 {
     font-size: 2.5rem;
 }
 
-section.contact div.form {
+section.contact form {
     width: 80%;
     margin: 0 auto;
 }
 
-section.contact input.name {
+section.contact form input.name {
     display: block;
     height: 36px;
     width: 100%;
@@ -313,7 +313,7 @@ section.contact input.name {
     font-size: 1.2rem;
 }
 
-section.contact input.email {
+section.contact form input.email {
     display: block;
     height: 36px;
     width: 100%;
@@ -323,7 +323,7 @@ section.contact input.email {
     font-size: 1.2rem;
 }
 
-section.contact textarea.message {
+section.contact form textarea.message {
     display: block;
     height: 144px;
     width: 100%;
@@ -332,9 +332,8 @@ section.contact textarea.message {
     padding: 8px 10px;
 }
 
-section.contact button.send {
+section.contact form button.send {
     display: block;
-    border: none;
     margin: 20px 0;
     height: 40px;
     width: 100%;
@@ -344,22 +343,20 @@ section.contact button.send {
     background-color: #111;
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 section.contact div.socials {
     width: 80%;
-    margin: 0 auto;
-    padding: 20px 0 20px 0;
+    margin: 20px auto;
 }
 
-section.contact div.socials div.social {}
-
-section.contact div.socials img {
+section.contact div.socials div.social img {
     width: 20%;
     margin: 10px 0;
 }
 
-section.contact div.socials div.social a {
+section.contact div.socials div.social p {
     display: block;
     float: right;
     width: 74%;
@@ -368,7 +365,8 @@ section.contact div.socials div.social a {
     font-family: 'saira', sans-serif;
     font-size: 14px;
     margin-left: 6%;
-    margin-top: 10%
+    margin-top: 10%;
+    cursor: default;
 }
 
 /*STOPKA*/
@@ -447,6 +445,44 @@ footer p {
     section.hobby div.item p {
         font-size: 1.5rem;
     }
+
+    section.contact h1 {
+        font-size: 2.8rem;
+    }
+
+    section.contact form input.name {
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    section.contact form input.email {
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    section.contact form textarea.message {
+        height: 168px;
+        font-size: 1.3rem;
+    }
+
+    section.contact form button.send {
+        height: 47px;
+        font-size: 1.5rem;
+    }
+
+    section.contact div.socials div.social img {
+        width: 20%;
+        margin: 12px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 74%;
+        font-size: 1.55rem;
+    }
+
+    footer p {
+        font-size: 1.6rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 375px) {
@@ -507,6 +543,44 @@ footer p {
     section.hobby div.item p {
         font-size: 1.7rem;
     }
+
+    section.contact h1 {
+        font-size: 3rem;
+    }
+
+    section.contact form input.name {
+        height: 45px;
+        font-size: 1.37rem;
+    }
+
+    section.contact form input.email {
+        height: 45px;
+        font-size: 1.37rem;
+    }
+
+    section.contact form textarea.message {
+        height: 180px;
+        font-size: 1.37rem;
+    }
+
+    section.contact form button.send {
+        height: 52px;
+        font-size: 1.6rem;
+    }
+
+    section.contact div.socials div.social img {
+        width: 20%;
+        margin: 13px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 74%;
+        font-size: 1.65rem;
+    }
+
+    footer p {
+        font-size: 1.7rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
@@ -546,6 +620,10 @@ footer p {
 
     section.motto div.motto p {
         font-size: 1.6rem;
+    }
+
+    footer p {
+        font-size: 1.9rem;
     }
 }
 
@@ -629,6 +707,48 @@ footer p {
     section.hobby div.item p {
         font-size: 2.4rem;
     }
+
+    section.contact h1 {
+        font-size: 5rem;
+    }
+
+    section.contact form {
+        width: 65%;
+    }
+
+    section.contact form input.name {
+        height: 65px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form input.email {
+        height: 65px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form textarea.message {
+        height: 260px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form button.send {
+        height: 68px;
+        font-size: 2rem;
+    }
+
+    section.contact div.socials div.social img {
+        width: 20%;
+        margin: 22px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 74%;
+        font-size: 2.8rem;
+    }
+
+    footer p {
+        font-size: 2.6rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 1024px) {
@@ -705,6 +825,51 @@ footer p {
     section.hobby div.item p {
         font-size: 3.5rem;
     }
+
+    section.contact h1 {
+        font-size: 6.8rem;
+    }
+
+    section.contact form {
+        width: 60%;
+    }
+
+    section.contact form input.name {
+        height: 95px;
+        font-size: 2.4rem;
+        margin: 40px 0;
+    }
+
+    section.contact form input.email {
+        height: 95px;
+        font-size: 2.4rem;
+        margin: 40px 0;
+    }
+
+    section.contact form textarea.message {
+        height: 375px;
+        font-size: 2.4rem;
+        margin: 40px 0;
+    }
+
+    section.contact form button.send {
+        height: 98px;
+        font-size: 3rem;
+    }
+
+    section.contact div.socials div.social img {
+        width: 20%;
+        margin: 35px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 74%;
+        font-size: 4rem;
+    }
+
+    footer p {
+        font-size: 3.6rem;
+    }
 }
 
 /*WIDOK ORIENTACJA POZIOMA TELEFON*/
@@ -757,6 +922,50 @@ footer p {
 
     section.hobby div.item p {
         line-height: 40vh;
+    }
+
+    section.contact h1 {
+        font-size: 3.2rem;
+    }
+
+    section.contact form input.name {
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    section.contact form input.email {
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    section.contact form textarea.message {
+        height: 168px;
+        font-size: 1.3rem;
+    }
+
+    section.contact form button.send {
+        height: 47px;
+        font-size: 1.5rem;
+    }
+
+    section.contact div.socials div.social img {
+        width: 15%;
+        margin: 12px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 79%;
+        font-size: 1.8rem;
+        margin-top: 7%;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    footer p {
+        font-size: 1.8rem;
+        line-height: 15vh;
     }
 }
 
@@ -830,6 +1039,52 @@ footer p {
     section.hobby div.item p {
         font-size: 1.6rem;
     }
+
+    section.contact form {
+        width: 65%;
+    }
+
+    section.contact h1 {
+        font-size: 3.5rem;
+    }
+
+    section.contact form input.name {
+        height: 55px;
+        font-size: 1.6rem;
+    }
+
+    section.contact form input.email {
+        height: 55px;
+        font-size: 1.6rem;
+    }
+
+    section.contact form textarea.message {
+        height: 220px;
+        font-size: 1.6rem;
+    }
+
+    section.contact form button.send {
+        height: 65px;
+        font-size: 1.85rem;
+    }
+
+    section.contact div.socials {}
+
+    section.contact div.socials div.social img {
+        width: 10%;
+        margin: 15px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 79%;
+        font-size: 2.2rem;
+        margin-top: 6.3%;
+        margin-left: 3%;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
 }
 
 @media (orientation: landscape) and (min-width:730px) {
@@ -854,6 +1109,10 @@ footer p {
     section.motto div.motto p {
         font-size: 1.5rem;
         padding-top: 8px;
+    }
+
+    footer p {
+        font-size: 2.1rem;
     }
 }
 
@@ -926,6 +1185,50 @@ footer p {
 
     section.hobby div.item p {
         font-size: 1.8rem;
+    }
+
+    section.contact form {
+        width: 65%;
+    }
+
+    section.contact h1 {
+        font-size: 4rem;
+    }
+
+    section.contact form input.name {
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form input.email {
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form textarea.message {
+        height: 240px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form button.send {
+        height: 75px;
+        font-size: 2rem;
+    }
+
+    section.contact div.socials div.social img {
+        width: 13%;
+        margin: 15px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 84%;
+        font-size: 2.6rem;
+        margin-top: 6.3%;
+        margin-left: 3%;
+    }
+
+    footer p {
+        font-size: 2.3rem;
     }
 }
 
@@ -1014,6 +1317,50 @@ footer p {
 
     section.hobby div.item p {
         font-size: 2.2rem;
+    }
+
+    section.contact form {
+        width: 65%;
+    }
+
+    section.contact h1 {
+        font-size: 4.5rem;
+    }
+
+    section.contact form input.name {
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form input.email {
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form textarea.message {
+        height: 240px;
+        font-size: 1.8rem;
+    }
+
+    section.contact form button.send {
+        height: 75px;
+        font-size: 2rem;
+    }
+
+    section.contact div.socials {
+        width: 60%
+    }
+
+    section.contact div.socials div.social img {
+        width: 13%;
+        margin: 15px 0;
+    }
+
+    section.contact div.socials div.social p {
+        width: 83%;
+        font-size: 2.6rem;
+        margin-top: 5.8%;
+        margin-left: 4%;
     }
 }
 
@@ -1163,6 +1510,86 @@ footer p {
 
     section.hobby div.item:hover {
         background-size: 130%;
+    }
+
+    section.contact {
+        padding: 5% 13%;
+    }
+
+    section.contact form {
+        width: 50%;
+        margin: 0 3%;
+        float: left;
+    }
+
+    section.contact h1 {
+        font-size: 5rem;
+        padding: 0 20px;
+    }
+
+    section.contact form input.name {
+        height: 64px;
+        width: 440px;
+        font-size: 1.8rem;
+        margin: 40px auto;
+    }
+
+    section.contact form input.email {
+        height: 60px;
+        width: 440px;
+        font-size: 1.8rem;
+        margin: 40px auto;
+    }
+
+    section.contact form textarea.message {
+        height: 240px;
+        width: 440px;
+        font-size: 1.8rem;
+        margin: 40px auto;
+    }
+
+    section.contact form button.send {
+        height: 72px;
+        width: 440px;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    section.contact div.socials {
+        width: 35%;
+        float: left;
+        margin: 40px 3%;
+    }
+
+    section.contact div.socials div.social {
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    section.contact div.socials div.social:hover {
+        opacity: 1;
+    }
+
+    section.contact div.socials div.social img {
+        float: left;
+        width: 64px;
+        margin: 15px 0;
+    }
+
+    section.contact div.socials div.social p {
+        float: left;
+        width: 70%;
+        font-size: 2.4rem;
+        margin-top: 6.5%;
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+    footer p {
+        font-size: 2.5rem;
+        line-height: 10vh;
     }
 }
 
@@ -1351,4 +1778,16 @@ footer p {
 
     section.hobby div.item p {
         font-size: 6rem;
+    }
+
+    @media (orientation: landscape) and (min-width: 2500px) and (min-height: 1440px) {
+        section.motto {
+            min-height: 50vh;
+        }
+    }
+
+    @media (orientation: landscape) and (min-width: 2500px) and (min-height: 1080px) {
+        section.motto {
+            min-height: 70vh;
+        }
     }
