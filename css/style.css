@@ -1603,6 +1603,10 @@ span.copyright {
 }
 
 @media (orientation: landscape) and (width: 1366px) and (min-height:620px) {
+    header img.me {
+        height: 95%;
+    }
+
     section.motto div.motto h1 {
         padding-top: 80px;
         font-size: 6.5rem;
@@ -1634,6 +1638,11 @@ span.copyright {
 }
 
 @media (orientation: landscape) and (width: 1366px) and (height:1024px) {
+    header img.me {
+        height: 95%;
+        margin-right: -10%;
+    }
+
     header div.welcome {
         top: 14%;
     }
