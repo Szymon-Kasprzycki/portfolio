@@ -195,9 +195,10 @@ section.projects div.project p {
 
 section.motto {
     position: relative;
-    background-image: url(../images/motto.jpg);
+    background-image: url(/images/motto.jpg);
     background-size: cover;
     background-position: 30% center;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -230,6 +231,159 @@ section.motto div.motto p {
     font-size: 1.1rem;
     font-weight: 400;
     margin-top: 25px;
+}
+
+/*HOBBY*/
+
+section.hobby {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+section.hobby div.item {
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.hobby div.item:nth-of-type(1) {
+    background-image: url(/images/hobby1.jpg);
+}
+
+section.hobby div.item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+}
+
+section.hobby div.item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+}
+
+section.hobby div.item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+section.hobby h1 {
+    font-family: 'saira condensed';
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+section.hobby div.item p {
+    font-family: 'saira', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 25vh;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 1.2rem;
+    cursor: default;
+}
+
+/*KONTAKT*/
+
+section.contact {
+    background-color: #111;
+    color: white;
+}
+
+section.contact h1 {
+    padding: 30px 10px 30px;
+    font-family: 'saira condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+section.contact div.form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.contact input.name {
+    display: block;
+    height: 36px;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'saira';
+    padding: 8px 10px;
+    font-size: 1.2rem;
+}
+
+section.contact input.email {
+    display: block;
+    height: 36px;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'saira';
+    padding: 8px 10px;
+    font-size: 1.2rem;
+}
+
+section.contact textarea.message {
+    display: block;
+    height: 144px;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'saira';
+    padding: 8px 10px;
+}
+
+section.contact button.send {
+    display: block;
+    border: none;
+    margin: 20px 0;
+    height: 40px;
+    width: 100%;
+    font-family: 'saira';
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: #111;
+    color: white;
+    border: 1px solid white;
+}
+
+section.contact div.socials {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+section.contact div.socials div.social {}
+
+section.contact div.socials img {
+    width: 20%;
+    margin: 10px 0;
+}
+
+section.contact div.socials div.social a {
+    display: block;
+    float: right;
+    width: 74%;
+    text-decoration: none;
+    color: #ddd;
+    font-family: 'saira', sans-serif;
+    font-size: 14px;
+    margin-left: 6%;
+    margin-top: 10%
+}
+
+/*STOPKA*/
+
+footer {
+    height: 10vh;
+    background-color: #29a9df;
+}
+
+footer p {
+    line-height: 10vh;
+    text-align: center;
+    font-family: 'saira condensed';
+    font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 /*WIDOK WIĘKSZE TEL*/
@@ -285,6 +439,14 @@ section.motto div.motto p {
         font-size: 1.4rem;
         padding-top: 25px;
     }
+
+    section.hobby h1 {
+        font-size: 2.8rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 375px) {
@@ -337,11 +499,23 @@ section.motto div.motto p {
     section.motto div.motto p {
         font-size: 1.5rem;
     }
+
+    section.hobby h1 {
+        font-size: 3rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 1.7rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
     header img.me {
         right: -15%;
+    }
+
+    header div.welcome {
+        top: 3%;
     }
 
     header div.welcome p {
@@ -359,7 +533,7 @@ section.motto div.motto p {
     header div.welcome button.more-about {
         font-size: 1.9rem;
         line-height: 4.8rem;
-        margin-top: 55px;
+        margin-top: 35px;
     }
 
     section.motto div.motto h1 {
@@ -447,6 +621,14 @@ section.motto div.motto p {
         font-size: 2.2rem;
         margin-top: 40px;
     }
+
+    section.hobby h1 {
+        font-size: 5rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 2.4rem;
+    }
 }
 
 @media (orientation: portrait) and (min-width: 1024px) {
@@ -515,6 +697,14 @@ section.motto div.motto p {
         font-size: 3rem;
         margin-top: 60px;
     }
+
+    section.hobby h1 {
+        font-size: 6.8rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 3.5rem;
+    }
 }
 
 /*WIDOK ORIENTACJA POZIOMA TELEFON*/
@@ -558,6 +748,16 @@ section.motto div.motto p {
         font-size: 1.2rem;
         padding-top: 8px;
     }
+
+    section.hobby div.item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    section.hobby div.item p {
+        line-height: 40vh;
+    }
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
@@ -589,7 +789,7 @@ section.motto div.motto p {
     }
 
     section.projects h1 {
-        font-size: 3.4rem;
+        font-size: 3.5rem;
     }
 
     section.projects {
@@ -621,6 +821,14 @@ section.motto div.motto p {
     section.motto div.motto p {
         font-size: 1.35rem;
         padding-top: 8px;
+    }
+
+    section.hobby h1 {
+        font-size: 3.5rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 1.6rem;
     }
 }
 
@@ -711,6 +919,14 @@ section.motto div.motto p {
         font-size: 1.78rem;
         padding-top: 6px;
     }
+
+    section.hobby h1 {
+        font-size: 4rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 1.8rem;
+    }
 }
 
 /*WIDOK ORIENTACJA POZIOMA TABLET/KOMPUTER*/
@@ -790,6 +1006,14 @@ section.motto div.motto p {
     section.motto div.motto p {
         font-size: 2.3rem;
         padding-top: 35px;
+    }
+
+    section.hobby h1 {
+        font-size: 4.8rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 2.2rem;
     }
 }
 
@@ -900,22 +1124,72 @@ section.motto div.motto p {
     }
 
     section.motto {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     section.motto div.motto h1 {
-        padding-top: 120px;
+        padding-top: 75px;
         font-size: 6.5rem;
     }
 
     section.motto div.motto h2 {
-        padding: 170px 25% 0;
+        padding: 75px 25% 0;
         font-size: 4.8rem;
     }
 
     section.motto div.motto p {
         font-size: 2.4rem;
-        padding-top: 35px;
+        padding-top: 25px;
+    }
+
+    section.hobby h1 {
+        font-size: 5rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 2.6rem;
+        opacity: 0;
+        transition: 0.8s;
+    }
+
+    section.hobby div.item:hover p {
+        opacity: 1;
+    }
+
+    section.hobby div.item {
+        background-size: 100%;
+        transition: 0.8s;
+    }
+
+    section.hobby div.item:hover {
+        background-size: 130%;
+    }
+}
+
+@media (orientation: landscape) and (width: 1366px) and (height:768px) {
+    section.motto div.motto h1 {
+        padding-top: 80px;
+        font-size: 6.5rem;
+    }
+
+    section.motto div.motto h2 {
+        padding-top: 80px;
+        font-size: 4.4rem;
+    }
+
+    section.motto div.motto p {
+        font-size: 2.1rem;
+        padding-top: 15px;
+    }
+
+    header div.welcome {
+        top: 11%;
+    }
+
+    header div.welcome button.more-about {
+        font-size: 3rem;
+        line-height: 8rem;
+        margin-top: 100px;
     }
 }
 
@@ -927,6 +1201,7 @@ section.motto div.motto p {
 
     header div.welcome {
         left: 8%;
+        top: 13%;
     }
 
     header div.welcome p {
@@ -980,6 +1255,14 @@ section.motto div.motto p {
 
     section.projects div.project {
         max-width: 1250px;
+    }
+
+    section.hobby h1 {
+        font-size: 5.5rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 2.9rem;
     }
 }
 
@@ -1060,4 +1343,12 @@ section.motto div.motto p {
 
     section.projects div.project {
         max-width: 1350px;
+    }
+
+    section.hobby h1 {
+        font-size: 6rem;
+    }
+
+    section.hobby div.item p {
+        font-size: 6rem;
     }
