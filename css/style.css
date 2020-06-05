@@ -1633,6 +1633,20 @@ span.copyright {
     }
 }
 
+@media (orientation: landscape) and (width: 1366px) and (height:1024px) {
+    header div.welcome {
+        top: 14%;
+    }
+
+    header div.welcome h1 {
+        margin-top: 120px;
+    }
+
+    header div.welcome button.more-about {
+        margin-top: 120px;
+    }
+}
+
 @media (orientation: landscape) and (min-width: 1440px) {
     header img.me {
         height: 90%;
